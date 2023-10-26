@@ -1,0 +1,65 @@
+.footer {
+    width: 100%;
+    background: $midnight;
+    display: flex;
+    flex-flow: column nowrap;
+    border-top: 1px $white solid;
+
+
+    * {color: $white; text-decoration: none; font-weight: 400;}
+
+    &__nav, &__copyright {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    &__nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        order: 1;
+        
+
+    }
+
+    &__copyright {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        order: 2;
+        border-top: 1px $white solid;
+
+    }
+
+
+
+    @include monitor {
+
+        flex-flow: row nowrap;
+        
+        &__nav {
+            justify-content: flex-end;
+            order: 2;
+            flex-flow: row nowrap;
+            width: 57.5%;
+            padding: 20px 60px 20px 20px;
+
+
+            a {margin-left: 30px;}
+    
+        }
+    
+        &__copyright {
+            justify-content: flex-start;
+            order: 1;
+            border-top: none;
+            width: 42.5%;
+            padding: 20px 20px 20px 60px;
+
+
+        }
+    
+
+    }
+}

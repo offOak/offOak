@@ -1,0 +1,282 @@
+@import "../partials/breakpoints";
+
+
+
+
+.mobile__screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	pointer-events: none;
+    overflow: scroll;
+}
+
+
+.mobile__fold-scroller {
+	height: 100%;
+	
+}
+
+.mobile__fold-content {
+	pointer-events: all;
+	width: 100%;
+
+}
+
+.mobile__fold-size-fix {
+	width: 100%;
+	height: 100%;
+}
+
+.mobile__fold-before .mobile__fold-size-fix {
+	transform-origin: bottom center;
+}
+
+.mobile__fold-after .fold-size-fix {
+	transform-origin: top center;
+}
+
+#base-content {
+	display: none;
+}
+
+/*  Debug */
+.mobile__debug .mobile__fold:nth-child(2n) {
+	background: #ff00006c;
+}
+
+.mobile__debug .mobile__fold:nth-child(2n + 1) {
+	background: #ff00006c;
+}
+
+.mobile__btn-debug {
+	position: fixed;
+	top: 10px;
+	padding: 1rem;
+	font-size: 16px;
+	text-transform: uppercase;
+	right: 10px;
+	cursor: pointer;
+	z-index: 100;
+	background: goldenrod;
+	opacity: .5;
+	// display: none;
+}
+
+.mobile__square {
+	width: 100%;
+	padding-bottom: 100%;
+	background: coral;
+}
+
+.mobile__rectangle {
+	width: 100%;
+	padding-bottom: 50%;
+	background: coral;
+	box-shadow: 1px 0 coral, 0 1px coral;
+}
+
+
+
+.mobile__content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@media screen and (min-width: 53em) {
+	.mobile__message {
+		display: none;
+	}
+
+	.mobile__frame {
+		position: fixed;
+		text-align: left;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: none;
+		height: 100vh;
+		padding: 3rem;
+		pointer-events: none;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'title links'
+			'... ...'
+			'... demos';
+	}
+
+	.mobile__frame__title-wrap {
+		grid-area: title;
+		display: flex;
+	}
+
+	.mobile__frame__title {
+		margin: 0;
+	}
+
+	.mobile__frame__tagline {
+		position: relative;
+		margin: 0 0 0 1rem;
+		padding: 0 0 0 1rem;
+		opacity: 0.5;
+	}
+
+	.mobile__frame__demos {
+		margin: 0;
+		grid-area: demos;
+		justify-self: end;
+	}
+
+	.mobile__frame__links {
+		grid-area: links;
+		padding: 0;
+		justify-self: end;
+	}
+
+	.mobile__frame a {
+		pointer-events: auto;
+	}
+
+	.mobile__content {
+		justify-content: center;
+	}
+}
+
+
+  /* Effect Styles */
+  
+  .mobile__folds {
+    position: relative;
+    transform-style: preserve-3d;
+	
+  }
+  
+  .mobile__fold-3d {
+    position: absolute;
+    left: 0;
+    right: 0;
+    perspective: 100vh;
+    transform-style: preserve-3d;
+	
+  }
+  
+  .mobile__fold-3d-top {
+    bottom: 100%;
+    perspective-origin: 50% 100%;
+	
+  }
+  .mobile__fold-3d-bottom {
+    top: 100%;
+    /* Origin at the top of the bottom wrapper, the bottom of the center fold. */
+    perspective-origin: 50% 0%;
+  }
+  .mobile__debug .mobile__fold-top {
+    background: #dadada;
+  }
+  .mobile__debug .mobile__fold-bottom {
+    background: #dadada;
+  }
+  .mobile__debug .mobile__test-center {
+    background: #bababa;
+  }
+  .mobile__fold-bottom {
+    height: 50vh;
+    width: 100%;
+    /* background: #ff000090; */
+    transform-origin: top center;
+	// background: red;
+
+	@include tablet {
+		left: 64.5px;
+		position: relative;
+	}
+
+  }
+  .mobile__fold-top {
+    height: 50vh;
+    /* background: #ff000090; */
+    transform-origin: bottom center;
+	// background: green;
+	width: 100%;
+
+	@include tablet {
+		left: 64.5px;
+		position: relative;
+	}
+
+  }
+  .mobile__fold-top .mobile__fold-scroller {
+    transform-origin: top center;
+  }
+  .mobile__fold-bottom .mobile__fold-scroller {
+    transform-origin: top center;
+  }
+  .mobile__fold-center {
+    height: 50vh;
+    width: calc(100vw - 40px);
+	// background: blue;
+
+	@include tablet {
+		left: 64.5px;
+		position: relative;
+		width: 50vw;	
+		height: 70vh;
+	}
+
+  }
+  
+  .mobile__fold {
+    overflow: hidden;
+    //border: 1px solid #000;
+    border-top: 0;
+    border-bottom: 0;
+	position: relative;
+	top: 30px;
+
+	@include tablet {
+		top: 20px;
+	}
+
+
+	
+  }
+  .mobile__fold-scroller {
+    display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	
+	
+  }
+  
+  .mobile__fold-content {
+    padding: 0 0;
+	left: 0;
+	position: relative;
+	width: 80%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+
+
+  }
+  
+  .mobile__page-wrapper {
+	position: fixed;
+	top: 0;
+  }
+

@@ -1,0 +1,172 @@
+.event {
+
+    &__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: auto;
+
+
+        @include tablet {
+            flex-flow: row wrap;
+            overflow: auto;
+
+
+
+        }
+    }
+
+    &__side {
+        width: 100%;
+        background: $velvet;
+        padding: 25px 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+
+        @include tablet {
+            width: 30%;
+            height: 100%;
+            overflow: scroll !important;
+
+        }
+
+        &-logo {
+            width: 258px;
+            max-width: 80%;
+            margin: 20px 0 30px 0;
+        }
+
+        &-title {
+            color: $white;
+            font-family: Morion;
+            font-weight: 100;
+            margin: 20px 0 30px 0;
+        }
+
+        &-paragraph {
+            color: $white;
+            font-family: "TTI", sans-serif;
+            font-weight: 400;
+            padding-bottom: 30px;
+
+            &-mono {
+                font-family: "TTI-mono", monospace;
+                font-weight: 400;
+
+                &-600 {
+                    font-weight: 600;
+                }
+
+                & a {
+                    color: $white;
+                    font-weight: 600;
+                }
+
+                &-italics {
+                    font-family: "TTI-mono", monospace;
+                    font-weight: 400;
+                    font-style: italic;
+
+                }
+            }
+        }
+
+        &-hidden {
+            background: red;
+            display: none;
+        }
+
+    }
+
+    &__main {
+        width: 100%;
+        background: $midnight;
+        padding: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        @include tablet {
+            width: 70%;
+            height: 100%;
+            overflow: scroll;
+    
+
+        }
+
+        &-hidden {
+            background: blue;
+            display: none;
+        }
+
+        &__text {
+
+            &-div {
+                color: $white;
+                padding: 20px 0;
+                margin: 20px 0;
+                border-top: 1px $white dotted;
+                width: 100%;
+
+                @include monitor {
+                    display: flex;
+
+
+                }
+
+
+            }
+
+            &-heading {
+                font-family: 'Morion', serif;
+                font-weight: 100;
+                margin-bottom: 20px;
+
+                @include monitor {
+
+                    width: 40%;
+
+                }
+
+            }
+
+            &-paragraph {
+                font-family: "TTI", sans-serif;
+                font-weight: 400;
+
+
+                @include monitor {
+
+                    width: 60%;
+                    padding-left: 40px;
+                    padding-right: 80px;
+
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+    &__img {
+
+        &-50 {
+            width: calc(50% - 10px);
+            padding-bottom: 20px;
+
+        }
+
+        &-100 {
+            width: 100%;
+            padding-bottom: 20px;
+
+        }
+    }
+
+}

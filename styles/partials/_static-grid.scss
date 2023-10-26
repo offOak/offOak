@@ -1,0 +1,58 @@
+.static__grid {
+
+    &-outer {
+
+        background: url('../assets/backgrounds/perspective-grid-1.svg') center center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border: 1px solid #fff;
+        overflow: hidden;
+        // overflow: scroll;
+
+
+        @include tablet {
+            // border-bottom: none;
+
+        }
+        @include monitor {
+            // height: ;
+            // width: ;
+            background-size: cover;
+        }
+
+
+    }
+
+    &-svg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    &-inner {
+        // background: rgba(22, 221, 168, 0.264);
+        max-width: 100%;
+        aspect-ratio: 1.5046296444;
+        height: 72.727272%;
+        overflow: auto;
+        // background: red;
+        transition: all .1s linear; /* Add a smooth transition effect */
+
+    
+        @include tablet {
+            height: 72.727272%;
+            // width: ;
+            // aspect-ratio: ;
+        
+        }
+
+
+    }
+
+}

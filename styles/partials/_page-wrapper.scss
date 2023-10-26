@@ -1,0 +1,11 @@
+.page-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+
+    @include tablet {
+        flex-flow: row  nowrap;
+        
+    }
+
+}

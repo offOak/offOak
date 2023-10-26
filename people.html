@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 LLC</title>
+    <meta name="theme-color" content="#12181f" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/44.png">
+    <meta name="description" content="44LLC is a metadisciplinary creative studio in New York City founded by designers whose diverse experiences span interiors, architecture, product design, and branding. We collaborate with individuals, international brands, developers, and institutions who share our commitment to design excellence.">
+    <link rel="stylesheet" href="./styles/one-offs/people.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body class="demo-4 demo-5 loading">
+
+
+    <div class="page-wrapper">
+
+        <header class="header">
+            
+            <a class="header__logo-link" href="./index.html">
+                <img class="header__logo" src="./assets/logos/44-logo.webp" alt="44 LLC Logo">
+            </a>
+
+            <button class="header__button" onclick="$(this).toggleClass('rotate');">&plus;</button>
+
+            <a class="header__logo-link" href="https://www.instagram.com/44llc.ooo/">
+                <img class="header__logo" id="instagram-logo" src="./assets/icons/instagram.png" alt="44 LLC Logo">
+            </a>
+
+        </header>
+
+        
+
+        <div class="grid-wrapper">
+
+            
+            <div class="static__grid-outer">
+
+                <div class="manifesto__bar-top"></div>
+                <div class="manifesto__bar-bottom"></div>
+                <div class="manifesto__bar-left"></div>
+                <div class="manifesto__bar-right"></div>
+
+
+                    <div class="content">
+                        <div class="fold-content" id="base-content">            
+
+
+                            
+                        </div>
+                        <div class="screen">
+                        </div>
+                        <button class="btn-debug" id="btn-debug">Debug</button>
+                    </div>
+            
+
+                <nav class="nav">
+
+                  <div class="nav__box"><a href="./home.html" class="nav__link">Index &#x2197;</a></div>
+                  <div class="nav__box"><a href="./people.html" class="nav__link">People &#x2197;</a></div>
+                  <div class="nav__box"><a href="./manifesto.html" class="nav__link">Manifesto &#x2197;</a></div>
+                  <div class="nav__box"><a href="./sounds.html" class="nav__link">Sounds &#x2197;</a></div>
+                  <div class="nav__box"><a href="./happenings.html" class="nav__link">Happenings &#x2197;</a></div>
+                  <div class="nav__box"><a href="./contact.html" class="nav__link">Contact &#x2197;</a></div>
+                  <div class="nav__box"><a href="https://plia.earth" class="nav__link">Plia &#x2197;</a></div>
+
+
+                </nav>
+                <!-- <object class="static__grid-svg" data="./Perspective_Grid_01.svg" type="image/svg+xml"></object>
+                <img src="./Perspective_Grid_01.svg" alt="" class="static__grid-svg"> -->
+
+     
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/imagesloaded.pkgd.min.js"></script>
+
+    <script id="folds-content-script">
+  // Function to update the content based on screen width
+  $(document).ready(function updateContent() {
+
+    if ($(window).width() < 750) {
+  $('div.fold-content').html('<h1 class="people__h1 people__h1-m">People &#x2198;</h1><div class="people__m__wrapper"><img src="./assets/images/headshots/jc.png" alt="Portrait of Jessica Corr" class="people__m__img"><div class="people__m__textbox"><h2 class="people__m__title">Principal, Founder</h2><h1 class="people__m__name">Jessica Corr</h1><p class="people__m__bio">Jessica Corr is an award-winning industrial designer and an Associate Professor at Parsons School of Design. With a focus on hospitality, Jessica has consulted for Interior Designers such as tonychi, BAR Studio, Studio Razavi, Atelier Marsh, and Whynought. As cofounder of 44 she provides the nexus between beauty and innovation.</p></div></div><div class="people__m__wrapper"><img src="./assets/images/headshots/wp.png" alt="Portrait of William Paley" class="people__m__img"><div class="people__m__textbox"><h2 class="people__m__title">Principal, Founder</h2><h1 class="people__m__name">William Paley</h1><p class="people__m__bio">William Paley is a multidisciplinary designer with a foundation in architecture, interior decoration, and fine arts. After 25 years of collaborating with tonychi, William cofounded 44 to seek beauty through deep personal partnerships.</p></p></div></div><div class="people__m__wrapper"><img src="./assets/images/headshots/aj.png" alt="Portrait of Abbas Jamali" class="people__m__img"><div class="people__m__textbox"><h2 class="people__m__title">Director of Strategy</h2><h1 class="people__m__name">Abbas Jamali</h1><p class="people__m__bio">Abbas has diverse experience as a strategic consultant in product development, consumer goods, fashion and lifestyle industries. He is the creative consultant and strategic director for The Tehran Times, the first Iranian street style blog. He was also the Managing Director for Maison Araz Fazaeli, and was integral in launching the brand and introducing the collection to Paris Fashion Week. In his multidisciplinary experience, Abbas works across design fields, collaborating with creatives and business individuals to produce breakthrough brands.</p></div></div><div class="people__m__wrapper"><img src="./assets/images/headshots/gm.png" alt="Portrait of Gerald Morin" class="people__m__img"><div class="people__m__textbox"><h2 class="people__m__title">Director of Visual Design</h2><h1 class="people__m__name">Gerald Morin</h1><p class="people__m__bio">Gerald Morin is an award-winning graphic designer whose experience in building brands has given him expertise in a wide range of design disciplines.</p></div></div>');
+}
+
+    
+else {
+  $('div.fold-content').html('<div class="people__wrapper" id="h1w"><h1 class="people__h1">People &rarr;</h1></div><div class="people__wrapper"><div class="people__div"><img src="./assets/images/headshots/jc.png" alt="Portrait of Jessica Corr" class="people__img"><div class="people__textbox"><h2 class="people__title">Principal, Founder</h2><h1 class="people__name">Jessica Corr</h1><p class="people__bio">Jessica Corr is an award-winning industrial designer and an Associate Professor at Parsons School of Design. With a focus on hospitality, Jessica has consulted for Interior Designers such as tonychi, BAR Studio, Studio Razavi, Atelier Marsh, and Whynought. As cofounder of 44 she provides the nexus between beauty and innovation.</p></div></div><div class="people__div"><img src="./assets/images/headshots/wp.png" alt="Portrait of William Paley" class="people__img"><div class="people__textbox"><h2 class="people__title">Principal, Founder</h2><h1 class="people__name">William Paley</h1><p class="people__bio">William Paley is a multidisciplinary designer with a foundation in architecture, interior decoration, and fine arts. After 25 years of collaborating with tonychi, William cofounded 44 to seek beauty through deep personal partnerships.</p></p></div></div><div class="people__div"><img src="./assets/images/headshots/aj.png" alt="Portrait of Abbas Jamali" class="people__img"><div class="people__textbox"><h2 class="people__title">Director of Strategy</h2><h1 class="people__name">Abbas Jamali</h1><p class="people__bio">Abbas has diverse experience as a strategic consultant in product development, consumer goods, fashion and lifestyle industries. He is the creative consultant and strategic director for The Tehran Times, the first Iranian street style blog. He was also the Managing Director for Maison Araz Fazaeli, and was integral in launching the brand and introducing the collection to Paris Fashion Week. In his multidisciplinary experience, Abbas works across design fields, collaborating with creatives and business individuals to produce breakthrough brands.</p></div></div><div class="people__div"><img src="./assets/images/headshots/gm.png" alt="Portrait of Gerald Morin" class="people__img"><div class="people__textbox"><h2 class="people__title">Director of Visual Design</h2><h1 class="people__name">Gerald Morin</h1><p class="people__bio">Gerald Morin is an award-winning graphic designer whose experience in building brands has given him expertise in a wide range of design disciplines.</p></div></div></div>');
+}
+  }
+
+);
+
+    </script>
+
+    <script id="screen-content-script">
+  // Function to update the content based on screen width
+  $(document).ready(function updateScreen() {
+    if ($(window).width() < 750) {
+      $('div.screen').html('<div class="folds" id="folds"><div class="fold fold-center" id="fold-center"></div><div class="fold-3d fold-3d-top top-wrapper"><div class="fold fold-top" id="fold-top"></div></div><div class="fold-3d fold-3d-bottom bottom-wrapper"><div class="fold fold-bottom" id="fold-bottom"></div></div></div>');
+    } else {
+      $('div.screen').html('<div class="wrapper-3d"><div class="fold fold-before fold-before-3"></div><div class="fold fold-before fold-before-2"></div><div class="fold fold-before fold-before-1"></div></div>');
+    }
+  }
+
+);
+
+  </script>
+
+<script id="follow-horizontal" src="./scripts/updateGrid.js"></script>
+
+<script>
+        $(document).ready(function() {
+  function setFoldCenterHeight() {
+    var gridOuterHeight = $('.static__grid-outer').height();
+    var foldCenterHeight = (gridOuterHeight * 0.727272) + 'px';
+    $('.fold-center').css('height', foldCenterHeight);
+  }
+  setFoldCenterHeight();
+  $(window).resize(function() {
+    setFoldCenterHeight();
+  });
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+.sounds {
+
+    &__h1 {
+
+
+        color: $white;
+        font-family: "TTI", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        width: max-content;
+        background: url("../assets/backgrounds/scribble.svg");
+        background-size: cover;
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        text-transform: uppercase;
+
+
+        @include tablet {
+            font-size: 80px;
+
+
+        }
+
+        
+    }
+
+
+    &__div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        aspect-ratio: 1 !important;
+        transition: opacity 0.333s ease-in-out;
+        overflow: hidden;
+        cursor: pointer;
+
+        @include tablet {
+            width: 150px;
+            height: 150px;
+            }
+
+
+
+
+
+    }
+
+    &__img {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        // display: none;
+    }
+
+    &__iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        scale: 400%;
+        left: 55px;
+        top: 55px;
+        z-index: 2;
+        opacity: 0.0001;
+
+
+        @include tablet {
+            scale: 520%;
+            left: 220px;
+            top: 200px;    
+        }
+
+    }
+
+}
+
+.playButton__overlay {
+    height: 100%;
+}

@@ -1,0 +1,145 @@
+.manifesto {
+
+    
+    &__head {
+
+
+        color: $white;
+        font-family: "TTI", sans-serif;
+        font-weight: 700;
+        font-size: 10vw;
+        margin: 250px 0;
+        width: max-content;
+        background: url("../assets/backgrounds/scribble.svg");
+        background-size: cover;
+        text-transform: uppercase;
+
+
+        @include tablet {
+            font-size: 7vw;
+        }
+
+        // @include monitor {
+        //     // font-size: 8vw;
+        // }
+
+        
+    }
+    &__bar {
+
+        &-top {
+            position: fixed;
+            width: 100vw;
+            height: 20px;
+            background: $midnight;
+            top: 120px;
+            left: 0;
+            z-index: 9999;
+            @include tablet {
+                top: 0;
+            }
+
+        }
+
+        &-bottom {
+            position: fixed;
+            width: 100vw;
+            height: 20px;
+            background: $midnight;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+            @include tablet {display: none;}
+
+        }
+
+        &-left {
+            position: fixed;
+            width: 20px;
+            height: 100vh;
+            background: $midnight;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+            @include tablet {display: none;}
+        }
+
+        &-right {
+            position: fixed;
+            width: 20px;
+            height: 100vh;
+            background: $midnight;
+            bottom: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+    }
+
+    &__div {
+        display: none;
+        @include monitor {display: block;}
+
+        &-mobile {
+            @include monitor {display: none;}
+        }
+    }
+    
+
+    &__svg {
+        width: 100%;
+        margin-bottom: 100px;
+        overflow-x: visible;
+        position: relative;
+    }
+
+    &__text {
+
+        &-paragraph {
+            color: $white;
+            font-size: 4vw;
+            margin-bottom: 100px;
+            font-family: "TTI", sans-serif;
+
+            @include tablet {
+                font-size: 3vw;
+            }
+
+            @include monitor {
+                font-size: 1.4vw;
+            }
+        }
+
+        &-white {
+            color: $white;
+            font-size: 8.5vw;
+            margin-bottom: 20vh;
+            font-family: "TTI", sans-serif;
+
+            @include tablet {
+                font-size: 4.5vw;
+                margin-bottom: 40vh;
+
+            }
+
+
+        }
+
+        &-orange {
+            color: $orange;
+            font-size: 4vw;
+            margin-bottom: 100px;
+            font-family: "TTI", sans-serif;
+
+
+            @include tablet {
+                font-size: 2.4vw;
+
+
+
+            }
+
+
+        }
+    }
+}

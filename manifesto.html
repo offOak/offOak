@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44 LLC</title>
+    <meta name="theme-color" content="#12181f" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/44.png">
+    <meta name="description" content="44LLC is a metadisciplinary creative studio in New York City founded by designers whose diverse experiences span interiors, architecture, product design, and branding. We collaborate with individuals, international brands, developers, and institutions who share our commitment to design excellence.">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/one-offs/follow.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body class="demo-4 loading">
+
+
+    <div class="page-wrapper">
+
+        <header class="header">
+            
+            <a class="header__logo-link" href="./index.html">
+                <img class="header__logo" src="./assets/logos/44-logo.webp" alt="44 LLC Logo">
+            </a>
+
+            <button class="header__button" onclick="$(this).toggleClass('rotate');">&plus;</button>
+
+            <a class="header__logo-link" href="https://www.instagram.com/44llc.ooo/">
+                <img class="header__logo" id="instagram-logo" src="./assets/icons/instagram.png" alt="44 LLC Logo">
+            </a>
+
+        </header>
+
+        
+
+        <div class="grid-wrapper">
+
+            
+            <div class="static__grid-outer">
+
+                <div class="manifesto__bar-top"></div>
+                <div class="manifesto__bar-bottom"></div>
+                <div class="manifesto__bar-left"></div>
+                <div class="manifesto__bar-right"></div>
+
+
+                    <div class="content">
+                        <div class="fold-content" id="base-content">
+                            <!-- CONTENT INSIDE HERE -->
+
+                            <h1 class="manifesto__head">Manifesto &#x2198;</h1>
+
+                            <p class="manifesto__text-paragraph">
+                                44LLC is a metadisciplinary creative studio in New York City founded by designers whose diverse experiences span interiors, architecture, product design, and branding. 
+                                We collaborate with individuals, international brands, developers, and institutions who share our commitment to design excellence.
+                            </p>
+
+                            <div class="manifesto__div">
+                                <img class="manifesto__svg" src="./assets/manifesto-svgs/1.svg" alt="We believe that creativity is the lifeblood of humanity.">
+                                <img class="manifesto__svg" src="./assets/manifesto-svgs/2.svg" alt="Our practice is a formidable haven for those who seek to create beauty.">
+                                <img class="manifesto__svg" src="./assets/manifesto-svgs/3.svg" alt="We exist to erase the arbitrary rules and archaic boundaries in the name of artistry—to demolish all that stands in the way of imagination.">
+                                <h2 class="manifesto__text-orange">
+                                    We are orthodox in our heterodoxy.                                
+                                </h2>
+                                <h1 class="manifesto__text-white">
+                                    We are self aware in our pretension.
+                                </h1>
+                            </div>
+
+                            <div class="manifesto__div-mobile">
+                                <img class="manifesto__svg" src="./assets/manifesto-svgs/mobile/1.svg" alt="We believe that creativity is the lifeblood of humanity.">
+                                <img class="manifesto__svg" src="./assets/manifesto-svgs/mobile/2.svg" alt="Our practice is a formidable haven for those who seek to create beauty.">
+                                <img class="manifesto__svg" src="./assets/manifesto-svgs/mobile/3.svg" alt="We exist to erase the arbitrary rules and archaic boundaries in the name of artistry—to demolish all that stands in the way of imagination.">
+                                <img class="manifesto__svg tti-bold" src="./assets/manifesto-svgs/mobile/4.svg" alt="We are orthodox in our heterodoxy.">
+                                <img class="manifesto__svg tti-bold" src="./assets/manifesto-svgs/mobile/5.svg" alt="We are self aware in our pretension.">
+                            </div>
+
+
+                            
+                        </div>
+                        <div class="screen">
+                            <div class="folds" id="folds">
+                                <div class="fold fold-center" id="fold-center"></div>
+                                <div class="fold-3d fold-3d-top top-wrapper">
+                                    <div class="fold fold-top" id="fold-top"></div>
+                                </div>
+                                <div class="fold-3d fold-3d-bottom bottom-wrapper">
+                                    <div class="fold fold-bottom" id="fold-bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-debug" id="btn-debug">Debug</button>
+                    </div>
+            
+
+                <nav class="nav">
+
+                    <div class="nav__box"><a href="./home.html" class="nav__link">Index &#x2197;</a></div>
+                    <div class="nav__box"><a href="./people.html" class="nav__link">People &#x2197;</a></div>
+                    <div class="nav__box"><a href="./manifesto.html" class="nav__link">Manifesto &#x2197;</a></div>
+                    <div class="nav__box"><a href="./sounds.html" class="nav__link">Sounds &#x2197;</a></div>
+                    <div class="nav__box"><a href="./happenings.html" class="nav__link">Happenings &#x2197;</a></div>
+                    <div class="nav__box"><a href="./contact.html" class="nav__link">Contact &#x2197;</a></div>
+                    <div class="nav__box"><a href="https://plia.earth" class="nav__link">Plia &#x2197;</a></div>
+
+
+                </nav>
+                <!-- <object class="static__grid-svg" data="./Perspective_Grid_01.svg" type="image/svg+xml"></object>
+                <img src="./Perspective_Grid_01.svg" alt="" class="static__grid-svg"> -->
+
+     
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="./scripts/follow.js"></script>
+
+    <script>
+        $(document).ready(function() {
+  function setFoldCenterHeight() {
+    var gridOuterHeight = $('.static__grid-outer').height();
+    var foldCenterHeight = (gridOuterHeight * 0.727272) + 'px';
+    $('.fold-center').css('height', foldCenterHeight);
+  }
+  setFoldCenterHeight();
+  $(window).resize(function() {
+    setFoldCenterHeight();
+  });
+});
+
+
+
+
+    </script>
+</body>
+</html>

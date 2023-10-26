@@ -1,0 +1,78 @@
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/horizontal-scroll";
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: "TTI", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide {
+    display: none !important;
+    opacity: 0 !important;
+  }
+
+  body {
+    background: $midnight
+  }
+
+  .overflow-hidden {
+    overflow: hidden !important;
+  }
+
+  .tti-bold {
+    font-family: "TTI", sans-serif;
+  }
+
+
+
+@import "./partials/static-grid";
+@import "./partials/grid-wrapper";
+@import "./partials/page-wrapper";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/nav";
+
+@import "./partials/splash";
+@import "./partials/home";
+@import "./partials/dvd";
+@import "./partials/manifesto";
+@import "./partials/people";
+@import "./partials/happenings";
+@import "./partials/sounds";
+@import "./partials/contact";
+
+@import "./partials/offering";
+@import "./partials/event";
+@import "./partials/button";
+@import "./partials/ticker";
+// @import "./partials/horizontal";
+
+.div {
+
+  &__bottom {
+    width: 30%;
+    height: 30%;
+    background: yellow;
+    overflow: scroll;
+  }
+
+  &__center {
+    width: 30%;
+    height: 30%;
+    background: red;
+    overflow: scroll;
+  }
+
+}

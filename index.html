@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>44LLC</title>
+    <meta name="theme-color" content="#12181f" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/44.png">
+    <meta name="description" content="44LLC is a metadisciplinary creative studio in New York City founded by designers whose diverse experiences span interiors, architecture, product design, and branding. We collaborate with individuals, international brands, developers, and institutions who share our commitment to design excellence.">
+    <link rel="stylesheet" type="text/css" href="./styles/one-offs/3d.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <!-- We add the loader CSS here so that assets don't pop in before the bundled CSS is loaded -->
+
+</head>
+
+<body>
+
+    <canvas id="c"></canvas>
+    <div class="controls">
+        <!-- <div class="info">
+            <div class="info__message">
+                <p><strong>&nbsp;Grab&nbsp;</strong> to rotate. <strong>&nbsp;Scroll&nbsp;</strong> to zoom. <strong>&nbsp;Drag&nbsp;</strong> swatches to view more.</p>
+            </div>
+        </div> -->
+
+        <!-- This tray will be filled with colors via JS, and the ability to slide this panel will be added in with a lightweight slider script (no dependency used for this) -->
+        
+        <div id="js-tray" class="tray">
+            <div id="js-tray-slide" class="tray__slide"></div>
+        </div>
+    </div>
+
+    <div class="splash__wrapper">
+
+                    
+
+        <div class="splash__div">
+            <div class="splash__name-div">
+                <h1 class="splash__name-heading">44LLC</h1>
+                    <!-- <svg class="splash__name-heading" id="_44LLC_Copy" data-name="44LLC Copy" xmlns="http://www.w3.org/2000/svg" width="160" height="38" viewBox="0 0 160 38">
+                        <path id="Shape" d="M17.654,36.794V29.7H0V22.865L15.02,0H25.56V22.865H30.3V29.7H25.56v7.1Z" transform="translate(0 0.603)" fill="#fff"/>
+                        <path id="Shape-2" data-name="Shape" d="M17.654,36.794V29.7H0V22.865L15.02,0H25.56V22.865H30.3V29.7H25.56v7.1Z" transform="translate(32.727 0.603)" fill="#fff"/>
+                        <path id="Path" d="M0,36.794H24.848V29.7H7.93V0H0Z" transform="translate(67.879 0.603)" fill="#fff"/>
+                        <path id="Path-2" data-name="Path" d="M0,36.794H24.848V29.7H7.93V0H0Z" transform="translate(98.788 0.603)" fill="#fff"/>
+                        <path id="Path-3" data-name="Path" d="M17.323,38c9.186,0,14.173-5.014,16.01-12.139H25.2c-1.312,2.9-3.412,5.014-7.874,5.014-5.512,0-9.449-3.958-9.449-11.875S11.811,7.125,17.323,7.125c4.462,0,6.562,2.111,7.874,5.014h8.136C31.5,5.014,26.509,0,17.323,0,6.824,0,0,6.861,0,19S6.824,38,17.323,38Z" transform="translate(126.667)" fill="#fff"/>
+                      </svg> -->
+                      
+            </div>
+            <div class="splash__graphics-div">
+                <img src="./assets/images/44splash.svg" alt="" class="splash__graphics-svg">
+            </div>
+
+            <div class="splash__enter-div"><a href="./home.html" class="splash__enter-link">Enter &rarr;</a></div>
+     
+        </div>
+
+    </div>
+
+    
+    <!-- The main three.js file -->
+    <script type="module" src="./three/three.min.js"></script>
+    <script type="module" src="./three/GLTFLoader.js"></script>    <!-- This is a simple to use extension for three.js that activates all the rotating, dragging and zooming controls we need for both mouse and touch, there isn't a clear CDN for this that I can find -->
+    <script type="module" src='./three/OrbitControls.js'></script>
+    <script type="module" src="./scripts/3d.js"></script>
+</body>
+
+</html>

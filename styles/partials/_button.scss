@@ -1,0 +1,30 @@
+.button {
+    font-weight: 400;
+    border: 2px dashed white;
+    border-radius: 100px;
+    color: white;
+    background: none;
+    padding: 4px 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+
+    &:active {
+        font-weight: 800;
+    }
+
+    &:hover {
+        border: 2px dashed white;
+        background: plum;
+    }
+
+
+  }
+
+  .active {
+    border: 2px dashed white;
+    background: plum;
+
+
+
+  }

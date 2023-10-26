@@ -1,0 +1,127 @@
+.offering {
+    padding: 10px;
+    color: $white;
+
+
+
+    &__main {
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+
+        &-img {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        &-title {
+            margin-bottom: 12px;
+        }
+
+        &-h1 {
+            color: $white;
+            font-family: Morion;
+        }
+
+        &-text {
+            color: $white;
+            font-family: "TTI", sans-serif;
+            font-weight: 400;
+
+            &-mono {
+                font-family: "TTI-mono", monospace;
+                font-weight: 400;
+
+                &-600 {
+                    font-weight: 600;
+                }
+
+                & a {
+                    color: $white;
+                    font-weight: 600;
+                }
+
+                &-italics {
+                    font-family: "TTI-mono", monospace;
+                    font-weight: 400;
+                    font-style: italic;
+
+                }
+            }
+        }
+    }
+
+    &__side {
+        color: $white;
+
+        &-img {
+            width: 100%;
+            display: none;
+        }
+        &-heading {
+            color: $white;
+            font-size: 10px;
+            user-select: none;
+            font-family: "TTI", sans-serif;
+            margin-top: 30px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        &-link {
+            color: $white;
+            font-family: "TTI", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+
+        }
+
+    }
+
+
+    @include tablet {
+
+        display: flex;
+        position: relative;
+
+        &__main {
+
+            width: 50%;
+            padding: 5% 0 0 2.5%;
+
+            &-img {
+                display: none;
+            }
+        }
+
+
+        &__side {
+
+            width: 50%;
+            padding: 5% 10% 0 10%;
+
+            
+
+
+            &-heading {
+                font-size: 0.69vw;
+            }
+            &-img {
+                display: block;
+            }
+            &-link {
+                font-size: 1.25vw;
+                line-height: 1.6vw;
+            }
+        }
+    }
+
+    @include twok {
+
+        &__main {
+            font-size: 0.83vw;
+            line-height: 1.25vw;
+        }
+
+    }
+}

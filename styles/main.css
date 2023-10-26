@@ -900,6 +900,10 @@ body {
   border-bottom: 1px #ffffff dotted;
 }
 
+.border-bottom-solid {
+  border-bottom: 1px #ffffff solid;
+}
+
 .sounds__h1 {
   color: #ffffff;
   font-family: "TTI", sans-serif;
@@ -1384,10 +1388,10 @@ body {
 .c-ticker {
   z-index: 101;
   width: 100%;
-  height: 31px;
+  height: 50px;
   color: #B67CEE;
   white-space: nowrap;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px solid #B67CEE;
   border-bottom: 1px solid #B67CEE;
   flex-direction: column;
@@ -1404,7 +1408,7 @@ body {
 
 .c-ticker:hover {
   color: #B67CEE;
-  background-color: #12181f;
+  background-color: transparent;
 }
 
 .c-ticker.w--current {
@@ -1431,7 +1435,7 @@ body {
 }
 
 .c-ticker.dl-2 {
-  color: #12181f;
+  color: transparent;
   background-color: #f30;
   border: 1px #B67CEE;
 }
@@ -1443,7 +1447,7 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0vw;
   color: #B67CEE;
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px dotted #B67CEE;
   border-style: dotted dotted none none;
   flex-direction: column;
@@ -1467,7 +1471,7 @@ body {
 }
 
 .c-routing-tile-old.w--current {
-  color: #12181f;
+  color: transparent;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/63f812f729a7e04a9d583d59_pattern1.svg);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
@@ -1503,7 +1507,7 @@ body {
   z-index: 4;
   width: 100%;
   grid-row-gap: 4vw;
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
   flex-direction: column;
   margin-bottom: 1vw;
@@ -1523,7 +1527,7 @@ body {
 
 .c-home-contact {
   width: 100%;
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
   flex-flow: column wrap;
   grid-template-rows: auto;
@@ -1627,7 +1631,7 @@ body {
 }
 
 .c-product-lighting.cpu {
-  border-top-color: #12181f;
+  border-top-color: transparent;
 }
 
 .c-poster-content {
@@ -1737,7 +1741,7 @@ body {
 }
 
 .c-cta.meta:hover {
-  text-shadow: 0 0 #12181f;
+  text-shadow: 0 0 transparent;
   background-color: #B67CEE;
 }
 
@@ -1754,8 +1758,8 @@ body {
 }
 
 .c-cta.light {
-  color: #12181f;
-  border-color: #12181f;
+  color: transparent;
+  border-color: transparent;
 }
 
 .c-cta.light:hover {
@@ -1825,7 +1829,7 @@ body {
 }
 
 .c-cta.large.primary {
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
   border-style: none;
 }
@@ -1845,7 +1849,7 @@ body {
 }
 
 .c-cta.ttt {
-  background-color: #12181f;
+  background-color: transparent;
 }
 
 .c-cta.ttt:hover {
@@ -1855,7 +1859,7 @@ body {
 .c-cta.navi-all {
   z-index: 2;
   height: 30px;
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
   border-radius: 0;
   flex: none;
@@ -1871,7 +1875,7 @@ body {
 }
 
 .link-inline {
-  color: #12181f;
+  color: transparent;
   text-decoration: underline;
 }
 
@@ -1897,7 +1901,7 @@ body {
 .c-hero-bg {
   z-index: 0;
   width: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   border-right: 1px #B67CEE;
   margin-bottom: 1vw;
   position: absolute;
@@ -1929,7 +1933,7 @@ body {
 .c-footer {
   z-index: 3;
   opacity: 1;
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
   position: relative;
 }
@@ -2068,7 +2072,7 @@ body {
   height: 30px;
   grid-column-gap: 9px;
   cursor: pointer;
-  background-color: #12181f;
+  background-color: transparent;
   border-bottom: 1px solid #B67CEE;
   border-left: 1px #B67CEE;
   border-right: 1px #B67CEE;
@@ -2105,7 +2109,7 @@ body {
 }
 
 .btn-expand.search:hover {
-  background-color: #12181f;
+  background-color: transparent;
   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/63f812f729a7e04a9d583d59_pattern1.svg);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
@@ -2114,10 +2118,10 @@ body {
 .c-clipboard {
   width: 26px;
   height: 26px;
-  color: #12181f;
+  color: transparent;
   cursor: pointer;
   mix-blend-mode: exclusion;
-  border: 1px dotted #12181f;
+  border: 1px dotted transparent;
   border-radius: 200px;
   flex: none;
   justify-content: center;
@@ -2134,7 +2138,7 @@ body {
 
 .c-clipboard:active {
   color: #B67CEE;
-  background-color: #12181f;
+  background-color: transparent;
 }
 
 .c-anchor-content {
@@ -2153,7 +2157,7 @@ body {
   width: 25%;
   grid-column-gap: 0px;
   grid-row-gap: 2vw;
-  background-color: #12181f;
+  background-color: transparent;
   flex-direction: column;
   flex: none;
   grid-template-rows: auto;
@@ -2200,7 +2204,7 @@ body {
 .b-submit.inline-contact {
   width: 66.66%;
   color: #B67CEE;
-  background-color: #12181f;
+  background-color: transparent;
   margin-left: auto;
 }
 
@@ -2233,7 +2237,7 @@ body {
   z-index: 5;
   width: 100%;
   grid-row-gap: 0.5vw;
-  background-color: #12181f;
+  background-color: transparent;
   border-style: none;
   flex-direction: column;
   padding: 0;
@@ -2242,7 +2246,7 @@ body {
 
 .c-input.xl {
   z-index: 4;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px solid #B67CEE;
   margin-top: 0;
   padding-top: 0;
@@ -2271,7 +2275,7 @@ body {
 
 .c-form {
   grid-row-gap: 2vw;
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px #B67CEE;
   flex-direction: column;
   align-items: flex-start;
@@ -2487,7 +2491,7 @@ body {
 
 .c-delta-coverup {
   width: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   flex: 1;
   position: relative;
 }
@@ -2505,7 +2509,7 @@ body {
 
 .c-collab-process {
   width: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   margin-top: -1px;
   margin-left: auto;
   position: relative;
@@ -2528,7 +2532,7 @@ body {
   width: 100%;
   grid-column-gap: 16px;
   grid-row-gap: 2vw;
-  background-color: #12181f;
+  background-color: transparent;
   flex-direction: column;
   flex: none;
   grid-template-rows: auto;
@@ -2909,14 +2913,14 @@ body {
 .ci-prod-tile {
   width: auto;
   height: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   border-right: 1px dotted #B67CEE;
   flex: none;
 }
 
 .ci-prod-tile.dept-grid {
   width: 25%;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px dotted #B67CEE;
   border-bottom: 1px dotted #B67CEE;
   flex: none;
@@ -2976,14 +2980,14 @@ body {
 
 .c-prod-tile.feat {
   grid-row-gap: 2vw;
-  border-bottom: 1px dotted #12181f;
+  border-bottom: 1px dotted transparent;
 }
 
 .clw-routing-tiles {
   z-index: 2;
   width: 100%;
   height: auto;
-  background-color: #12181f;
+  background-color: transparent;
   border-left-width: 1px;
   border-left-color: #B67CEE;
   flex: none;
@@ -3127,7 +3131,7 @@ body {
 
 .ci-routing-tile {
   width: 50%;
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px dotted #B67CEE;
   border-left-color: transparent;
   flex-direction: column;
@@ -3189,8 +3193,8 @@ body {
 
 .c-store-font-sample {
   width: 75%;
-  border-top: 1px solid #12181f;
-  border-bottom: 1px solid #12181f;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   flex-direction: column;
   flex: none;
   display: flex;
@@ -3207,7 +3211,7 @@ body {
   grid-column-gap: 0vw;
   grid-row-gap: 0vw;
   border-bottom: 1px dotted #B67CEE;
-  border-right: 1px dotted #12181f;
+  border-right: 1px dotted transparent;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -3356,7 +3360,7 @@ body {
 .c-sub-content {
   z-index: 3;
   width: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   flex-flow: wrap;
   align-items: flex-start;
   display: flex;
@@ -3395,7 +3399,7 @@ body {
 .c-media-overpass {
   z-index: 3;
   height: 80vh;
-  color: #12181f;
+  color: transparent;
   flex-direction: column;
   position: relative;
 }
@@ -3515,7 +3519,7 @@ body {
 
 .clw-tag-tiles.related {
   width: 75%;
-  background-color: #12181f;
+  background-color: transparent;
   border-left: 1px dotted #B67CEE;
   position: relative;
 }
@@ -3573,7 +3577,7 @@ body {
   width: auto;
   height: 30px;
   grid-column-gap: 8px;
-  background-color: #12181f;
+  background-color: transparent;
   border-bottom: 1px solid #B67CEE;
   flex: none;
   justify-content: space-between;
@@ -3628,7 +3632,7 @@ body {
 }
 
 .c-title.dl {
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px solid #B67CEE;
   align-items: center;
   padding-top: 10px;
@@ -3649,7 +3653,7 @@ body {
 .c-title.tag-section {
   z-index: 6;
   grid-column-gap: 5px;
-  background-color: #12181f;
+  background-color: transparent;
   border-bottom: 1px dotted #B67CEE;
   align-items: flex-start;
   padding: 4vw 1vw 1vw;
@@ -3676,7 +3680,7 @@ body {
 }
 
 .c-title.light {
-  color: #12181f;
+  color: transparent;
 }
 
 .c-title.prod-tile-top {
@@ -3732,7 +3736,7 @@ body {
   width: 25%;
   grid-row-gap: 2vw;
   text-align: left;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px dotted #B67CEE;
   border-right: 1px dotted #B67CEE;
   flex-direction: column;
@@ -3819,7 +3823,7 @@ body {
   z-index: 3;
   width: 100%;
   grid-row-gap: 1vw;
-  background-color: #12181f;
+  background-color: transparent;
   flex-direction: column;
   padding-bottom: 1vw;
   display: flex;
@@ -3827,7 +3831,7 @@ body {
 }
 
 .i-work-related {
-  background-color: #12181f;
+  background-color: transparent;
 }
 
 .cl-work-related {
@@ -3839,7 +3843,7 @@ body {
 .c-index-inline {
   z-index: 2;
   text-align: left;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px dotted #B67CEE;
   padding-top: 2vw;
   padding-bottom: 2vw;
@@ -3890,8 +3894,8 @@ body {
   width: 100%;
   grid-column-gap: 0vw;
   grid-row-gap: 0vw;
-  border-top: 1px dotted #12181f;
-  border-left: 1px solid #12181f;
+  border-top: 1px dotted transparent;
+  border-left: 1px solid transparent;
   flex-direction: row;
   grid-template-rows: auto;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
@@ -3908,18 +3912,18 @@ body {
 
 .i-social {
   height: 30px;
-  border-bottom: 1px dotted #12181f;
-  border-right: 1px dotted #12181f;
+  border-bottom: 1px dotted transparent;
+  border-right: 1px dotted transparent;
   flex: 1;
 }
 
 .i-social:last-child {
-  border-right: 1px dotted #12181f;
+  border-right: 1px dotted transparent;
 }
 
 .i-social:hover {
   outline-offset: 0px;
-  outline: 1px solid #12181f;
+  outline: 1px solid transparent;
 }
 
 .i-social.footer {
@@ -3933,7 +3937,7 @@ body {
 
 .c-social {
   height: 100%;
-  color: #12181f;
+  color: transparent;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 4px;
@@ -3967,8 +3971,8 @@ body {
   width: 100%;
   height: 100%;
   grid-row-gap: 0.5vw;
-  border-top: 1px dotted #12181f;
-  border-left: 1px dotted #12181f;
+  border-top: 1px dotted transparent;
+  border-left: 1px dotted transparent;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.75vw 1vw;
@@ -4076,7 +4080,7 @@ body {
   min-width: 0;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  text-shadow: 0 0 #12181f;
+  text-shadow: 0 0 transparent;
   white-space: nowrap;
   align-self: center;
   font-size: 12px;
@@ -4149,7 +4153,7 @@ body {
 }
 
 .c-nav-link.current {
-  color: #12181f;
+  color: transparent;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/63f812f729a7e04a9d583d59_pattern1.svg);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
@@ -4162,7 +4166,7 @@ body {
 }
 
 .c-nav-link.current.w--current {
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
 }
 
@@ -4183,7 +4187,7 @@ body {
   width: 100%;
   height: 100%;
   max-height: 66vh;
-  background-color: #12181f;
+  background-color: transparent;
   border-bottom: 1px solid #B67CEE;
   flex-direction: column;
   margin-top: -1px;
@@ -4197,7 +4201,7 @@ body {
   width: 49.5vw;
   height: 28px;
   color: #B67CEE;
-  background-color: #12181f;
+  background-color: transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid #B67CEE;
   justify-content: center;
@@ -4319,7 +4323,7 @@ body {
   z-index: 21;
   width: 100%;
   height: 39px;
-  background-color: #12181f;
+  background-color: transparent;
   margin-bottom: -40px;
   display: none;
   position: sticky;
@@ -4548,7 +4552,7 @@ body {
   height: 31px;
   grid-column-gap: 6px;
   opacity: 0;
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px solid #B67CEE;
   border-style: solid none;
   justify-content: center;
@@ -4736,12 +4740,12 @@ body {
 }
 
 .c-navi-related:hover {
-  background-color: #12181f;
+  background-color: transparent;
   border-color: #B67CEE;
 }
 
 .c-navi-related.w--current {
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
 }
 
@@ -4832,7 +4836,7 @@ body {
   grid-row-gap: 5px;
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
-  color: #12181f;
+  color: transparent;
   text-align: center;
   cursor: move;
   mix-blend-mode: screen;
@@ -4861,7 +4865,7 @@ body {
   z-index: 3000;
   width: 100%;
   height: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -4887,7 +4891,7 @@ body {
 .clw-delta-feat {
   z-index: 9;
   width: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   position: relative;
 }
 
@@ -4935,7 +4939,7 @@ body {
 }
 
 .c-subsecs.hero {
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px #B67CEE;
   border-bottom-style: solid;
   flex: none;
@@ -4954,7 +4958,7 @@ body {
 }
 
 .c-subsecs.sub {
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px solid #B67CEE;
   border-bottom: 1px solid #B67CEE;
   justify-content: flex-start;
@@ -4967,7 +4971,7 @@ body {
 }
 
 .c-subsecs.works {
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px #B67CEE;
   border-bottom-style: solid;
   flex: none;
@@ -5236,7 +5240,7 @@ body {
   width: 100%;
   min-height: 50vh;
   grid-row-gap: 0vw;
-  background-color: #12181f;
+  background-color: transparent;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -5336,7 +5340,7 @@ body {
   background-color: #111;
   border-radius: 5px;
   position: relative;
-  box-shadow: inset 0 -8px 3px #12181f, 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -8px 3px transparent, 0 2px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
 .c-book.cat-slide {
@@ -5373,7 +5377,7 @@ body {
 
 .c-cpu-desk.light {
   z-index: 2;
-  background-image: linear-gradient(#12181f, #e0e0e0 12%, #c5c5c5 92%, #4b4a4a);
+  background-image: linear-gradient(transparent, #e0e0e0 12%, #c5c5c5 92%, #4b4a4a);
   position: relative;
 }
 
@@ -5419,7 +5423,7 @@ body {
 .t-onimg-caption {
   z-index: 2;
   max-width: 520px;
-  color: #12181f;
+  color: transparent;
   text-align: right;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -5436,7 +5440,7 @@ body {
 .c-tag-tile {
   width: 100%;
   grid-row-gap: 1vw;
-  background-color: #12181f;
+  background-color: transparent;
   flex-direction: column;
   flex: 1;
   justify-content: space-between;
@@ -5445,7 +5449,7 @@ body {
 
 .ci-tag-tile {
   width: 15.8%;
-  background-color: #12181f;
+  background-color: transparent;
   flex-flow: wrap;
   flex: none;
   justify-content: flex-start;
@@ -5483,7 +5487,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: #12181f;
+  background-color: transparent;
   border: 1px dotted #B67CEE;
   flex-direction: column;
   justify-content: center;
@@ -5623,7 +5627,7 @@ body {
 .c-nav-srch-results {
   width: 24.66vw;
   outline-offset: 0px;
-  background-color: #12181f;
+  background-color: transparent;
   outline: 1px solid #B67CEE;
   flex-direction: column;
   display: none;
@@ -5640,7 +5644,7 @@ body {
   z-index: 2;
   width: 100%;
   height: 30px;
-  color: #12181f;
+  color: transparent;
   background-color: #B67CEE;
   flex: none;
   justify-content: center;
@@ -5677,7 +5681,7 @@ body {
 .c-tag-fillters {
   z-index: 5;
   width: 100%;
-  background-color: #12181f;
+  background-color: transparent;
   border-bottom: 1px solid #B67CEE;
   justify-content: center;
   align-items: center;
@@ -5735,7 +5739,7 @@ body {
   z-index: 105;
   width: 24.75vw;
   opacity: 0;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px #B67CEE;
   border-left: 1px solid #B67CEE;
   position: fixed;
@@ -5774,9 +5778,9 @@ body {
 .c-catalog-zoom {
   z-index: 2;
   height: 20px;
-  color: #12181f;
+  color: transparent;
   cursor: pointer;
-  border: 1px solid #12181f;
+  border: 1px solid transparent;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
@@ -5789,8 +5793,8 @@ body {
 .c-explore-btn {
   z-index: 100000;
   grid-column-gap: 10px;
-  color: #12181f;
-  background-color: #12181f;
+  color: transparent;
+  background-color: transparent;
   border: 1px solid #B67CEE;
   border-radius: 20px;
   align-items: center;
@@ -5835,7 +5839,7 @@ body {
   width: 100%;
   height: 40px;
   white-space: nowrap;
-  background-color: #12181f;
+  background-color: transparent;
   border-top: 1px solid #B67CEE;
   border-bottom: 1px solid #B67CEE;
   flex-direction: column;
@@ -5849,7 +5853,7 @@ body {
 }
 
 .c-ticker-2:hover {
-  background-color: #12181f;
+  background-color: transparent;
 }
 
 .c-ticker-2.w--current {
@@ -5932,7 +5936,7 @@ body {
     border-width: 1.5px;
   }
   .c-nav-item.active {
-    text-shadow: 0 0 #12181f;
+    text-shadow: 0 0 transparent;
   }
   .c-nav-logo {
     position: relative;
@@ -6476,7 +6480,7 @@ body {
     margin-right: auto;
   }
   .c-delta-img {
-    background-color: #12181f;
+    background-color: transparent;
   }
   .c-delta-img.feat {
     height: 17vw;
@@ -6680,7 +6684,7 @@ body {
   }
   .ci-delta-post.home {
     max-width: 380px;
-    background-color: #12181f;
+    background-color: transparent;
     padding: 0.5vw 20px;
   }
   .clw-delta-posts {
@@ -6851,7 +6855,7 @@ body {
     padding: 0.5vw;
   }
   .ci-feat {
-    background-color: #12181f;
+    background-color: transparent;
   }
   .c-ctas {
     grid-column-gap: 0.5vw;
@@ -7178,7 +7182,7 @@ body {
     width: 380px;
     height: 41px;
     grid-column-gap: 0px;
-    background-color: #12181f;
+    background-color: transparent;
     border-top: 1px solid #B67CEE;
     border-left: 1px solid #B67CEE;
     justify-content: flex-start;
@@ -7703,7 +7707,7 @@ body {
   .c-tert-content {
     z-index: 2;
     width: 66.66%;
-    background-color: #12181f;
+    background-color: transparent;
     padding-bottom: 2vw;
   }
   .c-details-grid {
@@ -8896,7 +8900,7 @@ body {
     width: 66.66%;
   }
   .c-book {
-    box-shadow: inset 0 -8px 3px #12181f, 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -8px 3px transparent, 0 2px 3px 1px rgba(0, 0, 0, 0.3);
   }
   .c-dlta-standard {
     width: 66.66%;
@@ -9396,7 +9400,7 @@ body {
     margin-bottom: 2vw;
   }
   .f-catalog-filters {
-    background-color: #12181f;
+    background-color: transparent;
   }
   .c-product-icons {
     flex-direction: column;
@@ -9894,7 +9898,7 @@ body {
   .s-arrow-r {
     width: 60px;
     height: 110px;
-    color: #12181f;
+    color: transparent;
     padding-right: 5px;
   }
   .s-arrow-l {
@@ -10663,7 +10667,7 @@ body {
     height: 30px;
     max-width: 480px;
     min-width: 200px;
-    color: #12181f;
+    color: transparent;
     background-color: #B67CEE;
     border-radius: 20px;
     padding-left: 20px;
@@ -10672,7 +10676,7 @@ body {
   }
   .c-intro-copy {
     width: 100%;
-    background-color: #12181f;
+    background-color: transparent;
     border-top: 1px solid #B67CEE;
     padding: 0 6vw 15vw;
     position: relative;
@@ -11425,7 +11429,7 @@ body {
   .c-mnav-main {
     z-index: 104;
     width: 100%;
-    background-color: #12181f;
+    background-color: transparent;
     flex-direction: column;
     flex: 0 auto;
     justify-content: center;
@@ -11480,7 +11484,7 @@ body {
     right: 0;
   }
   .c-mnav-closelabel {
-    background-color: #12181f;
+    background-color: transparent;
     border: 1px solid #B67CEE;
     padding: 4px;
   }
@@ -11504,13 +11508,13 @@ body {
     background-image: none;
   }
   .c-mnav-link.checkout {
-    color: #12181f;
+    color: transparent;
     background-color: #B67CEE;
   }
   .c-mnav-links {
     width: 100%;
     grid-row-gap: 10px;
-    background-color: #12181f;
+    background-color: transparent;
     flex-direction: column;
     flex: none;
   }
@@ -11548,7 +11552,7 @@ body {
     z-index: 2;
     width: 100%;
     height: 75dvh;
-    background-color: #12181f;
+    background-color: transparent;
     flex-direction: column;
     flex: none;
     justify-content: space-between;
@@ -11562,7 +11566,7 @@ body {
     padding: 4px 2px 2px 3px;
   }
   .c-mnav-mode.current {
-    color: #12181f;
+    color: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/639cef9c9835788fdcd25b4e_giffycanvas2.gif);
     background-position: 0 0, 0 0;
     background-size: auto, 8px;
@@ -11725,7 +11729,7 @@ body {
     max-width: 290px;
     grid-column-gap: 16px;
     grid-row-gap: 0.5vw;
-    background-color: #12181f;
+    background-color: transparent;
     border: 1px dotted #B67CEE;
     flex-direction: column;
     grid-template-rows: auto auto;
@@ -11745,7 +11749,7 @@ body {
   }
   .c-cart-expand-2 {
     height: 35px;
-    color: #12181f;
+    color: transparent;
     background-color: #B67CEE;
     border-radius: 20px;
     padding-left: 20px;
@@ -12190,7 +12194,7 @@ body {
     z-index: 1;
     width: 100%;
     grid-row-gap: 2vw;
-    background-color: #12181f;
+    background-color: transparent;
     border-top-style: none;
     border-bottom: 1px dotted #B67CEE;
     flex-direction: column;
@@ -12203,7 +12207,7 @@ body {
   .c-2col-context.pdp {
     width: 100%;
     grid-row-gap: 2vw;
-    background-color: #12181f;
+    background-color: transparent;
     border-top-style: none;
     border-bottom: 1px dotted #B67CEE;
     flex-direction: column;
@@ -12578,7 +12582,7 @@ body {
     display: flex;
   }
   .c-cart-header {
-    background-color: #12181f;
+    background-color: transparent;
     padding: 30px 4vw 3vw;
   }
   .c-cart-panel {
@@ -13220,7 +13224,7 @@ body {
   }
   .c-lrail-context {
     width: 100%;
-    background-color: #12181f;
+    background-color: transparent;
     flex-direction: column;
     align-items: flex-start;
     top: 57px;
@@ -13470,7 +13474,7 @@ body {
   }
   .ci-routing-tile.large-slide {
     width: 75%;
-    background-color: #12181f;
+    background-color: transparent;
     border-top-style: dotted;
     padding-top: 4vw;
   }
@@ -13540,7 +13544,7 @@ body {
   }
   .clw-img-grid.pdp {
     width: 100%;
-    background-color: #12181f;
+    background-color: transparent;
     padding-top: 4vw;
     padding-bottom: 2vw;
   }
@@ -13798,7 +13802,7 @@ body {
   }
   .c-navi-sub.dl {
     width: 100%;
-    background-color: #12181f;
+    background-color: transparent;
     border-bottom: 1px solid #B67CEE;
     position: static;
     top: 107px;
@@ -13806,7 +13810,7 @@ body {
   .c-navi-sub.checkout {
     z-index: 5;
     width: 100%;
-    background-color: #12181f;
+    background-color: transparent;
     border: 1px solid #B67CEE;
     margin-top: 2vw;
     margin-left: 0;

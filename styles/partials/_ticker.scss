@@ -39,10 +39,10 @@
 .c-ticker {
     z-index: 101;
     width: 100%;
-    height: 31px;
+    height: 50px;
     color: $purple;
     white-space: nowrap;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px solid $purple;
     border-bottom: 1px solid $purple;
     flex-direction: column;
@@ -60,7 +60,7 @@
 
 .c-ticker:hover {
     color: $purple;
-    background-color:$midnight
+    background-color:transparent
 }
 
 .c-ticker.w--current {
@@ -87,7 +87,7 @@
 }
 
 .c-ticker.dl-2 {
-    color: $midnight;
+    color: transparent;
     background-color: #f30;
     border:1px $purple
 }
@@ -99,7 +99,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0vw;
     color: $purple;
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px dotted $purple;
     border-style: dotted dotted none none;
     flex-direction: column;
@@ -124,7 +124,7 @@
 }
 
 .c-routing-tile-old.w--current {
-    color: $midnight;
+    color: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/63f812f729a7e04a9d583d59_pattern1.svg);
     background-position: 0 0, 0 0;
     background-size:auto, auto
@@ -160,7 +160,7 @@
     z-index: 4;
     width: 100%;
     grid-row-gap: 4vw;
-    color: $midnight;
+    color: transparent;
     background-color: $purple;
     flex-direction: column;
     margin-bottom: 1vw;
@@ -180,7 +180,7 @@
 
 .c-home-contact {
     width: 100%;
-    color: $midnight;
+    color: transparent;
     background-color: $purple;
     flex-flow: column wrap;
     grid-template-rows: auto;
@@ -284,7 +284,7 @@
 }
 
 .c-product-lighting.cpu {
-    border-top-color:$midnight
+    border-top-color:transparent
 }
 
 .c-poster-content {
@@ -394,7 +394,7 @@
 }
 
 .c-cta.meta:hover {
-    text-shadow: 0 0 $midnight;
+    text-shadow: 0 0 transparent;
     background-color:$purple
 }
 
@@ -411,8 +411,8 @@
 }
 
 .c-cta.light {
-    color: $midnight;
-    border-color:$midnight
+    color: transparent;
+    border-color:transparent
 }
 
 .c-cta.light:hover {
@@ -482,7 +482,7 @@
 }
 
 .c-cta.large.primary {
-    color: $midnight;
+    color: transparent;
     background-color: $purple;
     border-style:none
 }
@@ -502,7 +502,7 @@
 }
 
 .c-cta.ttt {
-    background-color:$midnight
+    background-color:transparent
 }
 
 .c-cta.ttt:hover {
@@ -512,7 +512,7 @@
 .c-cta.navi-all {
     z-index: 2;
     height: 30px;
-    color: $midnight;
+    color: transparent;
     background-color: $purple;
     border-radius: 0;
     flex: none;
@@ -529,7 +529,7 @@
 }
 
 .link-inline {
-    color: $midnight;
+    color: transparent;
     text-decoration:underline
 }
 
@@ -555,7 +555,7 @@
 .c-hero-bg {
     z-index: 0;
     width: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     border-right: 1px $purple;
     margin-bottom: 1vw;
     position: absolute;
@@ -587,7 +587,7 @@
 .c-footer {
     z-index: 3;
     opacity: 1;
-    color: $midnight;
+    color: transparent;
     background-color: $purple;
     position:relative
 }
@@ -725,7 +725,7 @@
     height: 30px;
     grid-column-gap: 9px;
     cursor: pointer;
-    background-color: $midnight;
+    background-color: transparent;
     border-bottom: 1px solid $purple;
     border-left: 1px $purple;
     border-right: 1px $purple;
@@ -762,7 +762,7 @@
 }
 
 .btn-expand.search:hover {
-    background-color: $midnight;
+    background-color: transparent;
     background-image: linear-gradient(rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/63f812f729a7e04a9d583d59_pattern1.svg);
     background-position: 0 0, 0 0;
     background-size:auto, auto
@@ -771,10 +771,10 @@
 .c-clipboard {
     width: 26px;
     height: 26px;
-    color: $midnight;
+    color: transparent;
     cursor: pointer;
     mix-blend-mode: exclusion;
-    border: 1px dotted $midnight;
+    border: 1px dotted transparent;
     border-radius: 200px;
     flex: none;
     justify-content: center;
@@ -791,7 +791,7 @@
 
 .c-clipboard:active {
     color: $purple;
-    background-color:$midnight
+    background-color:transparent
 }
 
 .c-anchor-content {
@@ -810,7 +810,7 @@
     width: 25%;
     grid-column-gap: 0px;
     grid-row-gap: 2vw;
-    background-color: $midnight;
+    background-color: transparent;
     flex-direction: column;
     flex: none;
     grid-template-rows: auto;
@@ -857,7 +857,7 @@
 .b-submit.inline-contact {
     width: 66.66%;
     color: $purple;
-    background-color: $midnight;
+    background-color: transparent;
     margin-left:auto
 }
 
@@ -890,7 +890,7 @@
     z-index: 5;
     width: 100%;
     grid-row-gap: .5vw;
-    background-color: $midnight;
+    background-color: transparent;
     border-style: none;
     flex-direction: column;
     padding: 0;
@@ -899,7 +899,7 @@
 
 .c-input.xl {
     z-index: 4;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px solid $purple;
     margin-top: 0;
     padding-top: 0;
@@ -930,7 +930,7 @@
 
 .c-form {
     grid-row-gap: 2vw;
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px $purple;
     flex-direction: column;
     align-items: flex-start;
@@ -1146,7 +1146,7 @@
 
 .c-delta-coverup {
     width: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     flex: 1;
     position:relative
 }
@@ -1164,7 +1164,7 @@
 
 .c-collab-process {
     width: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     margin-top: -1px;
     margin-left: auto;
     position:relative
@@ -1187,7 +1187,7 @@
     width: 100%;
     grid-column-gap: 16px;
     grid-row-gap: 2vw;
-    background-color: $midnight;
+    background-color: transparent;
     flex-direction: column;
     flex: none;
     grid-template-rows: auto;
@@ -1569,14 +1569,14 @@
 .ci-prod-tile {
     width: auto;
     height: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     border-right: 1px dotted $purple;
     flex:none
 }
 
 .ci-prod-tile.dept-grid {
     width: 25%;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px dotted $purple;
     border-bottom: 1px dotted $purple;
     flex: none;
@@ -1636,14 +1636,14 @@
 
 .c-prod-tile.feat {
     grid-row-gap: 2vw;
-    border-bottom:1px dotted $midnight
+    border-bottom:1px dotted transparent
 }
 
 .clw-routing-tiles {
     z-index: 2;
     width: 100%;
     height: auto;
-    background-color: $midnight;
+    background-color: transparent;
     border-left-width: 1px;
     border-left-color: $purple;
     flex: none;
@@ -1787,7 +1787,7 @@
 
 .ci-routing-tile {
     width: 50%;
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px dotted $purple;
     border-left-color: transparent;
     flex-direction: column;
@@ -1850,8 +1850,8 @@
 
 .c-store-font-sample {
     width: 75%;
-    border-top: 1px solid $midnight;
-    border-bottom: 1px solid $midnight;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     flex-direction: column;
     flex: none;
     display:flex
@@ -1868,7 +1868,7 @@
     grid-column-gap: 0vw;
     grid-row-gap: 0vw;
     border-bottom: 1px dotted $purple;
-    border-right: 1px dotted $midnight;
+    border-right: 1px dotted transparent;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
@@ -2017,7 +2017,7 @@
 .c-sub-content {
     z-index: 3;
     width: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     flex-flow: wrap;
     align-items: flex-start;
     display: flex;
@@ -2056,7 +2056,7 @@
 .c-media-overpass {
     z-index: 3;
     height: 80vh;
-    color: $midnight;
+    color: transparent;
     flex-direction: column;
     position:relative
 }
@@ -2176,7 +2176,7 @@
 
 .clw-tag-tiles.related {
     width: 75%;
-    background-color: $midnight;
+    background-color: transparent;
     border-left: 1px dotted $purple;
     position:relative
 }
@@ -2234,7 +2234,7 @@
     width: auto;
     height: 30px;
     grid-column-gap: 8px;
-    background-color: $midnight;
+    background-color: transparent;
     border-bottom: 1px solid $purple;
     flex: none;
     justify-content: space-between;
@@ -2290,7 +2290,7 @@
 }
 
 .c-title.dl {
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px solid $purple;
     align-items: center;
     padding-top: 10px;
@@ -2311,7 +2311,7 @@
 .c-title.tag-section {
     z-index: 6;
     grid-column-gap: 5px;
-    background-color: $midnight;
+    background-color: transparent;
     border-bottom: 1px dotted $purple;
     align-items: flex-start;
     padding: 4vw 1vw 1vw;
@@ -2338,7 +2338,7 @@
 }
 
 .c-title.light {
-    color:$midnight
+    color:transparent
 }
 
 .c-title.prod-tile-top {
@@ -2395,7 +2395,7 @@
     width: 25%;
     grid-row-gap: 2vw;
     text-align: left;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px dotted $purple;
     border-right: 1px dotted $purple;
     flex-direction: column;
@@ -2483,7 +2483,7 @@
     z-index: 3;
     width: 100%;
     grid-row-gap: 1vw;
-    background-color: $midnight;
+    background-color: transparent;
     flex-direction: column;
     padding-bottom: 1vw;
     display: flex;
@@ -2491,7 +2491,7 @@
 }
 
 .i-work-related {
-    background-color:$midnight
+    background-color:transparent
 }
 
 .cl-work-related {
@@ -2503,7 +2503,7 @@
 .c-index-inline {
     z-index: 2;
     text-align: left;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px dotted $purple;
     padding-top: 2vw;
     padding-bottom: 2vw;
@@ -2554,8 +2554,8 @@
     width: 100%;
     grid-column-gap: 0vw;
     grid-row-gap: 0vw;
-    border-top: 1px dotted $midnight;
-    border-left: 1px solid $midnight;
+    border-top: 1px dotted transparent;
+    border-left: 1px solid transparent;
     flex-direction: row;
     grid-template-rows: auto;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
@@ -2572,18 +2572,18 @@
 
 .i-social {
     height: 30px;
-    border-bottom: 1px dotted $midnight;
-    border-right: 1px dotted $midnight;
+    border-bottom: 1px dotted transparent;
+    border-right: 1px dotted transparent;
     flex:1
 }
 
 .i-social:last-child {
-    border-right:1px dotted $midnight
+    border-right:1px dotted transparent
 }
 
 .i-social:hover {
     outline-offset: 0px;
-    outline:1px solid $midnight
+    outline:1px solid transparent
 }
 
 .i-social.footer {
@@ -2597,7 +2597,7 @@
 
 .c-social {
     height: 100%;
-    color: $midnight;
+    color: transparent;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 4px;
@@ -2631,8 +2631,8 @@
     width: 100%;
     height: 100%;
     grid-row-gap: .5vw;
-    border-top: 1px dotted $midnight;
-    border-left: 1px dotted $midnight;
+    border-top: 1px dotted transparent;
+    border-left: 1px dotted transparent;
     flex-direction: column;
     justify-content: space-between;
     padding: .75vw 1vw;
@@ -2740,7 +2740,7 @@
     min-width: 0;
     letter-spacing: .02em;
     text-transform: uppercase;
-    text-shadow: 0 0 $midnight;
+    text-shadow: 0 0 transparent;
     white-space: nowrap;
     align-self: center;
     font-size: 12px;
@@ -2813,7 +2813,7 @@
 }
 
 .c-nav-link.current {
-    color: $midnight;
+    color: transparent;
     background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/63f812f729a7e04a9d583d59_pattern1.svg);
     background-position: 0 0, 0 0;
     background-size:auto, auto
@@ -2826,7 +2826,7 @@
 }
 
 .c-nav-link.current.w--current {
-    color: $midnight;
+    color: transparent;
     background-color:$purple
 }
 
@@ -2847,7 +2847,7 @@
     width: 100%;
     height: 100%;
     max-height: 66vh;
-    background-color: $midnight;
+    background-color: transparent;
     border-bottom: 1px solid $purple;
     flex-direction: column;
     margin-top: -1px;
@@ -2861,7 +2861,7 @@
     width: 49.5vw;
     height: 28px;
     color: $purple;
-    background-color: $midnight;
+    background-color: transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid $purple;
     justify-content: center;
@@ -2983,7 +2983,7 @@
     z-index: 21;
     width: 100%;
     height: 39px;
-    background-color: $midnight;
+    background-color: transparent;
     margin-bottom: -40px;
     display: none;
     position: -webkit-sticky;
@@ -3213,7 +3213,7 @@
     height: 31px;
     grid-column-gap: 6px;
     opacity: 0;
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px solid $purple;
     border-style: solid none;
     justify-content: center;
@@ -3404,12 +3404,12 @@
 }
 
 .c-navi-related:hover {
-    background-color: $midnight;
+    background-color: transparent;
     border-color:$purple
 }
 
 .c-navi-related.w--current {
-    color: $midnight;
+    color: transparent;
     background-color:$purple
 }
 
@@ -3500,7 +3500,7 @@
     grid-row-gap: 5px;
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
-    color: $midnight;
+    color: transparent;
     text-align: center;
     cursor: move;
     mix-blend-mode: screen;
@@ -3529,7 +3529,7 @@
     z-index: 3000;
     width: 100%;
     height: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -3555,7 +3555,7 @@
 .clw-delta-feat {
     z-index: 9;
     width: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     position:relative
 }
 
@@ -3603,7 +3603,7 @@
 }
 
 .c-subsecs.hero {
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px $purple;
     border-bottom-style: solid;
     flex: none;
@@ -3623,7 +3623,7 @@
 }
 
 .c-subsecs.sub {
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px solid $purple;
     border-bottom: 1px solid $purple;
     justify-content: flex-start;
@@ -3636,7 +3636,7 @@
 }
 
 .c-subsecs.works {
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px $purple;
     border-bottom-style: solid;
     flex: none;
@@ -3906,7 +3906,7 @@
     width: 100%;
     min-height: 50vh;
     grid-row-gap: 0vw;
-    background-color: $midnight;
+    background-color: transparent;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -4006,7 +4006,7 @@
     background-color: #111;
     border-radius: 5px;
     position: relative;
-    box-shadow:inset 0 -8px 3px $midnight, 0 2px 3px 1px rgba(0, 0, 0, .3)
+    box-shadow:inset 0 -8px 3px transparent, 0 2px 3px 1px rgba(0, 0, 0, .3)
 }
 
 .c-book.cat-slide {
@@ -4043,7 +4043,7 @@
 
 .c-cpu-desk.light {
     z-index: 2;
-    background-image: linear-gradient($midnight, #e0e0e0 12%, #c5c5c5 92%, #4b4a4a);
+    background-image: linear-gradient(transparent, #e0e0e0 12%, #c5c5c5 92%, #4b4a4a);
     position:relative
 }
 
@@ -4089,7 +4089,7 @@
 .t-onimg-caption {
     z-index: 2;
     max-width: 520px;
-    color: $midnight;
+    color: transparent;
     text-align: right;
     letter-spacing: -.01em;
     text-transform: uppercase;
@@ -4106,7 +4106,7 @@
 .c-tag-tile {
     width: 100%;
     grid-row-gap: 1vw;
-    background-color: $midnight;
+    background-color: transparent;
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
@@ -4115,7 +4115,7 @@
 
 .ci-tag-tile {
     width: 15.8%;
-    background-color: $midnight;
+    background-color: transparent;
     flex-flow: wrap;
     flex: none;
     justify-content: flex-start;
@@ -4153,7 +4153,7 @@
     text-align: center;
     letter-spacing: .03em;
     text-transform: uppercase;
-    background-color: $midnight;
+    background-color: transparent;
     border: 1px dotted $purple;
     flex-direction: column;
     justify-content: center;
@@ -4293,7 +4293,7 @@
 .c-nav-srch-results {
     width: 24.66vw;
     outline-offset: 0px;
-    background-color: $midnight;
+    background-color: transparent;
     outline: 1px solid $purple;
     flex-direction: column;
     display: none;
@@ -4310,7 +4310,7 @@
     z-index: 2;
     width: 100%;
     height: 30px;
-    color: $midnight;
+    color: transparent;
     background-color: $purple;
     flex: none;
     justify-content: center;
@@ -4348,7 +4348,7 @@
 .c-tag-fillters {
     z-index: 5;
     width: 100%;
-    background-color: $midnight;
+    background-color: transparent;
     border-bottom: 1px solid $purple;
     justify-content: center;
     align-items: center;
@@ -4407,7 +4407,7 @@
     z-index: 105;
     width: 24.75vw;
     opacity: 0;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px $purple;
     border-left: 1px solid $purple;
     position: fixed;
@@ -4446,9 +4446,9 @@
 .c-catalog-zoom {
     z-index: 2;
     height: 20px;
-    color: $midnight;
+    color: transparent;
     cursor: pointer;
-    border: 1px solid $midnight;
+    border: 1px solid transparent;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -4461,8 +4461,8 @@
 .c-explore-btn {
     z-index: 100000;
     grid-column-gap: 10px;
-    color: $midnight;
-    background-color: $midnight;
+    color: transparent;
+    background-color: transparent;
     border: 1px solid $purple;
     border-radius: 20px;
     align-items: center;
@@ -4507,7 +4507,7 @@
     width: 100%;
     height: 40px;
     white-space: nowrap;
-    background-color: $midnight;
+    background-color: transparent;
     border-top: 1px solid $purple;
     border-bottom: 1px solid $purple;
     flex-direction: column;
@@ -4522,7 +4522,7 @@
 }
 
 .c-ticker-2:hover {
-    background-color:$midnight
+    background-color:transparent
 }
 
 .c-ticker-2.w--current {
@@ -4628,7 +4628,7 @@
     }
 
     .c-nav-item.active {
-        text-shadow:0 0 $midnight
+        text-shadow:0 0 transparent
     }
 
     .c-nav-logo {
@@ -5328,7 +5328,7 @@
     }
 
     .c-delta-img {
-        background-color:$midnight
+        background-color:transparent
     }
 
     .c-delta-img.feat {
@@ -5586,7 +5586,7 @@
 
     .ci-delta-post.home {
         max-width: 380px;
-        background-color: $midnight;
+        background-color: transparent;
         padding:.5vw 20px
     }
 
@@ -5802,7 +5802,7 @@
     }
 
     .ci-feat {
-        background-color:$midnight
+        background-color:transparent
     }
 
     .c-ctas {
@@ -6215,7 +6215,7 @@
         width: 380px;
         height: 41px;
         grid-column-gap: 0px;
-        background-color: $midnight;
+        background-color: transparent;
         border-top: 1px solid $purple;
         border-left: 1px solid $purple;
         justify-content: flex-start;
@@ -6864,7 +6864,7 @@
     .c-tert-content {
         z-index: 2;
         width: 66.66%;
-        background-color: $midnight;
+        background-color: transparent;
         padding-bottom:2vw
     }
 
@@ -8364,7 +8364,7 @@
     }
 
     .c-book {
-        box-shadow:inset 0 -8px 3px $midnight, 0 2px 3px 1px rgba(0, 0, 0, .3)
+        box-shadow:inset 0 -8px 3px transparent, 0 2px 3px 1px rgba(0, 0, 0, .3)
     }
 
     .c-dlta-standard {
@@ -8990,7 +8990,7 @@
     }
 
     .f-catalog-filters {
-        background-color:$midnight
+        background-color:transparent
     }
 
     .c-product-icons {
@@ -9614,7 +9614,7 @@
     .s-arrow-r {
         width: 60px;
         height: 110px;
-        color: $midnight;
+        color: transparent;
         padding-right:5px
     }
 
@@ -10584,7 +10584,7 @@
         height: 30px;
         max-width: 480px;
         min-width: 200px;
-        color: $midnight;
+        color: transparent;
         background-color: $purple;
         border-radius: 20px;
         padding-left: 20px;
@@ -10594,7 +10594,7 @@
 
     .c-intro-copy {
         width: 100%;
-        background-color: $midnight;
+        background-color: transparent;
         border-top: 1px solid $purple;
         padding: 0 6vw 15vw;
         position:relative
@@ -11526,7 +11526,7 @@
     .c-mnav-main {
         z-index: 104;
         width: 100%;
-        background-color: $midnight;
+        background-color: transparent;
         flex-direction: column;
         flex: 0 auto;
         justify-content: center;
@@ -11585,7 +11585,7 @@
     }
 
     .c-mnav-closelabel {
-        background-color: $midnight;
+        background-color: transparent;
         border: 1px solid $purple;
         padding:4px
     }
@@ -11613,14 +11613,14 @@
     }
 
     .c-mnav-link.checkout {
-        color: $midnight;
+        color: transparent;
         background-color:$purple
     }
 
     .c-mnav-links {
         width: 100%;
         grid-row-gap: 10px;
-        background-color: $midnight;
+        background-color: transparent;
         flex-direction: column;
         flex:none
     }
@@ -11663,7 +11663,7 @@
         z-index: 2;
         width: 100%;
         height: 75dvh;
-        background-color: $midnight;
+        background-color: transparent;
         flex-direction: column;
         flex: none;
         justify-content: space-between;
@@ -11679,7 +11679,7 @@
     }
 
     .c-mnav-mode.current {
-        color: $midnight;
+        color: transparent;
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://uploads-ssl.webflow.com/5cb7be195426f23752acf2dc/639cef9c9835788fdcd25b4e_giffycanvas2.gif);
         background-position: 0 0, 0 0;
         background-size: auto, 8px;
@@ -11878,7 +11878,7 @@
         max-width: 290px;
         grid-column-gap: 16px;
         grid-row-gap: .5vw;
-        background-color: $midnight;
+        background-color: transparent;
         border: 1px dotted $purple;
         flex-direction: column;
         grid-template-rows: auto auto;
@@ -11901,7 +11901,7 @@
 
     .c-cart-expand-2 {
         height: 35px;
-        color: $midnight;
+        color: transparent;
         background-color: $purple;
         border-radius: 20px;
         padding-left: 20px;
@@ -12450,7 +12450,7 @@
         z-index: 1;
         width: 100%;
         grid-row-gap: 2vw;
-        background-color: $midnight;
+        background-color: transparent;
         border-top-style: none;
         border-bottom: 1px dotted $purple;
         flex-direction: column;
@@ -12464,7 +12464,7 @@
     .c-2col-context.pdp {
         width: 100%;
         grid-row-gap: 2vw;
-        background-color: $midnight;
+        background-color: transparent;
         border-top-style: none;
         border-bottom: 1px dotted $purple;
         flex-direction: column;
@@ -12928,7 +12928,7 @@
     }
 
     .c-cart-header {
-        background-color: $midnight;
+        background-color: transparent;
         padding:30px 4vw 3vw
     }
 
@@ -13726,7 +13726,7 @@
 
     .c-lrail-context {
         width: 100%;
-        background-color: $midnight;
+        background-color: transparent;
         flex-direction: column;
         align-items: flex-start;
         top:57px
@@ -14037,7 +14037,7 @@
 
     .ci-routing-tile.large-slide {
         width: 75%;
-        background-color: $midnight;
+        background-color: transparent;
         border-top-style: dotted;
         padding-top:4vw
     }
@@ -14124,7 +14124,7 @@
 
     .clw-img-grid.pdp {
         width: 100%;
-        background-color: $midnight;
+        background-color: transparent;
         padding-top: 4vw;
         padding-bottom:2vw
     }
@@ -14445,7 +14445,7 @@
 
     .c-navi-sub.dl {
         width: 100%;
-        background-color: $midnight;
+        background-color: transparent;
         border-bottom: 1px solid $purple;
         position: static;
         top:107px
@@ -14454,7 +14454,7 @@
     .c-navi-sub.checkout {
         z-index: 5;
         width: 100%;
-        background-color: $midnight;
+        background-color: transparent;
         border: 1px solid $purple;
         margin-top: 2vw;
         margin-left: 0;

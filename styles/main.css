@@ -775,8 +775,8 @@ body {
   width: max-content;
   background: url("../assets/backgrounds/scribble.svg");
   background-size: cover;
-  position: sticky;
-  top: 10%;
+  position: relative;
+  top: 200px;
   left: 20px;
   height: 0;
   text-transform: uppercase;
@@ -816,6 +816,7 @@ body {
 .happenings__img {
   width: 100%;
   position: sticky;
+  height: 100%;
   z-index: 1;
   top: 0;
 }
@@ -842,20 +843,49 @@ body {
   padding: 25px 20px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   cursor: pointer;
   border-bottom: 1px #ffffff dotted;
+  justify-content: space-between;
 }
 .happenings__event__top-data {
   font-family: "TTI", sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
-  padding-right: 20px;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 1000px) {
+  .happenings__event__top-data {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+.happenings__event__top-group {
+  width: 40%;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 1000px) {
+  .happenings__event__top-group {
+    display: flex;
+    width: 45%;
+    flex-flow: row nowrap;
+  }
 }
 .happenings__event__top-title, .happenings__event__top-button {
   font-weight: 800;
   text-transform: none;
+}
+.happenings__event__top-button {
+  padding-right: 20px;
+}
+.happenings__event__top-button-div {
+  position: relative;
+}
+.happenings__event__top-button-rotate {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .happenings__event__dropdown {
   display: none;
@@ -1383,6 +1413,7 @@ body {
   justify-content: space-between;
   align-items: center;
   display: flex;
+  margin-right: 8vw !important;
 }
 
 .c-ticker {
@@ -1400,8 +1431,7 @@ body {
   align-items: flex-start;
   margin-bottom: -1px;
   display: flex;
-  position: sticky;
-  top: 39px;
+  position: relative;
   overflow: hidden;
   text-decoration: none;
 }

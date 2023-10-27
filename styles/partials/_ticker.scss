@@ -33,7 +33,8 @@
     flex: none;
     justify-content: space-between;
     align-items: center;
-    display:flex
+    display:flex;
+    margin-right: 8vw !important;
 }
 
 .c-ticker {
@@ -51,9 +52,7 @@
     align-items: flex-start;
     margin-bottom: -1px;
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 39px;
+    position: relative;
     overflow:hidden;
     text-decoration: none;
 }

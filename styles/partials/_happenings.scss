@@ -9,8 +9,8 @@
         width: max-content;
         background: url("../assets/backgrounds/scribble.svg");
         background-size: cover;
-        position: sticky;
-        top: 10%;
+        position: relative;
+        top: 200px;
         left: 20px;
         height: 0;
         text-transform: uppercase;
@@ -26,6 +26,8 @@
 
 
     }
+
+
 
     &__wrapper {
         width: 100%;
@@ -66,6 +68,7 @@
     &__img {
         width: 100%;
         position: sticky;
+        height: 100%;
         z-index: 1;
         top: 0;
     }
@@ -91,6 +94,7 @@
 
     &__event {
 
+
         &__wrapper {
             color: $white;
             z-index: 5;
@@ -104,9 +108,9 @@
             padding: 25px 20px;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
             cursor: pointer;
             border-bottom: 1px $white dotted;
+            justify-content: space-between;
 
 
             &-data {
@@ -114,14 +118,46 @@
             font-weight: 400;
             font-size: 12px;
             text-transform: uppercase;
-            padding-right: 20px;
+            padding: 0 10px;
+
+            @include monitor {
+                width: 50%;
+                display: flex;
+                flex-flow: row nowrap;
+            }
             
+        }
+
+        &-group {
+            width: 40%;
+            padding: 0 10px;
+
+            @include monitor {
+                display: flex;
+                width: 45%;
+                flex-flow: row nowrap;
+            }
         }
 
         &-title, &-button {
             font-weight: 800;
             text-transform: none;
             
+        }
+
+        &-button {
+
+            padding-right: 20px;
+
+            &-div {
+                position: relative;
+            }
+
+            &-rotate {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
         }
 
         }

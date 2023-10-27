@@ -121,51 +121,8 @@
     <script src="../scripts/grid-ratio.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function () {
-    var gridInner = $(".static__grid-inner");
-    var originalHeight = gridInner.height();
-    var originalWidth = gridInner.width();
-    var clicked = false;
 
-    $(".happenings__img").click(function () {
-      if (!clicked) {
-        // First click: Expand to 100%
-        gridInner.animate({
-          height: "100%",
-          width: "100%",
-        }, 500); // Adjust the duration as needed
-        clicked = true;
-      } else {
-        // Second click: Revert to original size
-        gridInner.animate({
-          height: originalHeight,
-          width: originalWidth,
-        }, 500); // Adjust the duration as needed
-        clicked = false;
-      }
-    });
-  });
-</script>
-
-<script>
-  $(document).ready(function(){
-    $(".toggle").click(function(){
-      // Find the immediate sibling with the class .slidedown and slideToggle it
-      $(this).next(".slidedown").slideToggle();
-    });
-  });
-</script>
-
-<script>
-  $(document).ready(function () {
-      $(".scroll-to-top").click(function () {
-          $(".event__wrapper, .event__main, .event__side").animate({
-              scrollTop: 0
-          }, 1000);
-      });
-  });
-</script>
+    <script src="../scripts/event.js"></script>
 
 
 

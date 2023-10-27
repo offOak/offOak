@@ -782,7 +782,7 @@ body {
   text-transform: uppercase;
   z-index: 2;
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
   .happenings__head {
     font-size: 80px;
   }
@@ -1413,7 +1413,7 @@ body {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  margin-right: 8vw !important;
+  margin-right: 10vw !important;
 }
 
 .c-ticker {

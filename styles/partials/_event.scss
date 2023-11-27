@@ -7,6 +7,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         overflow: auto;
+        background: $midnight;
 
 
         @include tablet {
@@ -20,16 +21,20 @@
 
     &__side {
         width: 100%;
-        background: $velvet;
+        // background: $velvet;
         padding: 25px 20px;
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
+        border-bottom: 1px dotted $white;
 
         @include tablet {
             width: 30%;
             height: 100%;
             overflow: scroll !important;
+            border-right: 1px dotted $white;
+            border-bottom: none;
+
 
         }
 

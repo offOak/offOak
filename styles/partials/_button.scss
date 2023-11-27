@@ -1,6 +1,8 @@
 .button {
     font-weight: 400;
-    border: 2px dashed white;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 1px dotted white;
     border-radius: 100px;
     color: white;
     background: none;
@@ -9,12 +11,12 @@
     cursor: pointer;
 
 
-    &:active {
-        font-weight: 800;
-    }
+    // &:active {
+    //     font-weight: 800;
+    // }
 
     &:hover {
-        border: 2px dashed white;
+        border: 1px dotted white;
         background: plum;
     }
 
@@ -22,7 +24,7 @@
   }
 
   .active {
-    border: 2px dashed white;
+    border: 1px dotted white;
     background: plum;
 
 

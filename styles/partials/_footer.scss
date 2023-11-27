@@ -4,6 +4,8 @@
     display: flex;
     flex-flow: column nowrap;
     border-top: 1px $white solid;
+    font-size: 10px;
+    text-transform: uppercase;
 
 
     * {color: $white; text-decoration: none; font-weight: 400;}
@@ -34,7 +36,7 @@
 
 
 
-    @include monitor {
+    @include twelve-eighty {
 
         flex-flow: row nowrap;
         
@@ -46,7 +48,7 @@
             padding: 20px 60px 20px 20px;
 
 
-            a {margin-left: 30px;}
+            a {margin-left: 60px;}
     
         }
     

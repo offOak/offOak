@@ -130,6 +130,9 @@
             font-size: 12px;
             text-transform: uppercase;
             padding: 0 10px;
+            letter-spacing: .83px;
+
+
 
             @include monitor {
                 width: 50%;
@@ -152,7 +155,6 @@
 
         &-title, &-button {
             font-weight: 800;
-            text-transform: none;
             
         }
 
@@ -169,6 +171,11 @@
                 top: 0;
                 left: 0;
             }
+        }
+
+        &-type, &-location, &-date {
+            font-family: "TTI-mono", monospace;
+
         }
 
         }
